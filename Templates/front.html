@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<form action="\diabetes\checkdiabetes" method="post">
+    <center>
+Gender
+<input type="radio" name="gender"value="male" onclick="document.getElementById('preg').disabled =true"><h10>male</h10>
+
+    <input type="radio" name="gender" value="female"
+    onclick="document.getElementById('preg').disabled =false"><h10>female</h10>
+    <h1></h1>
+No of pragnancies:
+<input type="number" name="pregnancy"disabled id="preg"align="center">
+    <h1></h1>
+Glucose level:
+<input type="number" name="glucose" step="any"align="center">
+    <h1></h1>
+Blood pressure level:
+<input type="number" name = "bloodpressure"step="any">
+    <h1></h1>
+Skin thickness:
+<input type="number" name="skin thickness"step="any">
+    <h1></h1>
+Insulin level:
+<input type="number" name="insulin"step="any">
+    <h1></h1>
+Body mass index:
+<input type="number" name="bmi"step="any">
+    <h1></h1>
+Diabetes Pedigree function:
+<input type="number" name="dpf"step="any">
+    <h1></h1>
+Age:
+<input type="number" name="age">
+    <h1></h1>
+    <button name="save" type="submit" value="save">Show Result</button>
+        <h1></h1>
+        <h4>{{ output }}</h4>
+        <h5>{{ accuracy }}</h5>
+    </center>
+</form>
+
+</body>
+</html>
